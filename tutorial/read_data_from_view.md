@@ -14,7 +14,7 @@
 
 উক্ত ভিউটা রেসপন্স হিসেবে শুধুমাত্র ‘index.html’ ফাইলটা রেন্ডার করে পাঠিয়ে দিচ্ছে! অন্য কোন কাজ করছেনা। এটাকে আমাদের মন মত কাজ করাতে প্রথমে models.py থেকে Message মডেলটা ইম্পোর্ট করুনঃ
 
-from models import Message
+from myapp.models import Message
 তারপর index ভিউ ফাংশন এর ভিতর মডেল ম্যানেজার ব্যবহার করে Message এর সবগুলো ফিল্ড একটা ভ্যারিয়েবলে রাখুনঃ
 
     all_messages = Message.objects.all()
@@ -33,7 +33,7 @@ from models import Message
 
     from django.shortcuts import render, HttpResponse
     
-    from models import Message
+    from myapp.models import Message
     
     # Create your views here.
     def index(request):
