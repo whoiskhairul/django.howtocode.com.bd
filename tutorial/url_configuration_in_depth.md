@@ -46,7 +46,7 @@
     
     urlpatterns = [
         url(r'^admin/', admin.site.urls),
-        url(r'^myview/', include('myapp.urls'),
+        url(r'^myview/', include('myapp.urls')),
     ]
 
 - প্রথম লাইনে আমরা `url` এর সাথে `include` নামে একটা ফাংশন ইম্পোর্ট করেছি।
